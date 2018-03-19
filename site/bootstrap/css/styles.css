@@ -1,6 +1,7 @@
 body{
 	background-color: #61122f;
 /*background-color:#c41919;*/
+	box-sizing: border-box;
 	font-size: 16px;
 }
 #header-nav{
