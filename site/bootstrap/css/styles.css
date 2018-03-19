@@ -52,6 +52,7 @@ body{
 	text-decoration: none;
 }
 
+
 .navbar-brand p{
 	color:#000;
 	text-transform: uppercase;
@@ -70,7 +71,7 @@ body{
 #nav-list a{
 	color:#951C49;
 	text-align:center;
-	font-size:1.3em;
+	font-size:1.2em;
 }
 #nav-list a:hover{
 	background: #E7E7E7;
@@ -95,14 +96,21 @@ body{
 	border:1px solid #61122f;
 	margin:15px;
 }
-@media(max-width: 767px)
+.navbar-header{
+	width:100%;
+}
+
+#navbutton{
+	float:right;
+}
+@media(max-width: 500px)
 {
 	.navbar-brand{
 	padding-top:10px;
 	height:80px;
 	}
 	.navbar-brand h1{
-		font-size:4.1vw;
+		font-size:4vw;
 	}
 	.navbar-brand p{
 		font-size:3vw;
@@ -146,6 +154,18 @@ body{
 	border:2px solid #3F0C1F;
 	}
 
+	.navbar-brand h1{
+	font-size: 1em;
+		
+	}
+
+
+	#nav-list a{
+			font-size:0.9em;
+	}
+	#phone div{
+		font-size:0.5em;
+	}
 
 }
 
@@ -172,6 +192,10 @@ body{
 	box-shadow: 0px 0px 50px @3F0C1F;
 	border:2px solid #3F0C1F;
 	}
+
+#menu-tile, #special-tile, #map-tile{
+	height:150px;
+}
 }
 
 
@@ -184,3 +208,39 @@ body{
 	}
 
 }
+
+#menu-tile, #special-tile, #map-tile{
+	height:250px;
+	width:100%;
+	margin-bottom: 15px;
+	position: relative;
+	border:2px solid #3F0C1F;
+	overflow: hidden;
+}
+#menu-tile span, #special-tile span, #map-tile span{
+position:absolute;
+bottom:0;
+right:0;
+width:100%;
+text-align:center;
+background-color: #000;
+color:#fff;
+opacity:0.8;
+
+}
+
+#menu-tile
+{
+	background-image:url("../photo/menu.jpg");
+	background-position: center;
+}
+#special-tile
+{
+	background:url("../photo/special.jpg") no-repeat;
+	background-position: center;
+}
+
+#menu-tile:hover, #special-tile:hover, #map-tile:hover{
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+
